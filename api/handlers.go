@@ -7,6 +7,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"video_server/api/defs"
+	"video_server/api/session"
 )
 
 func CreateUser(w http.ResponseWriter, r *http.Request, p httprouter.Params){

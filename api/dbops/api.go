@@ -6,6 +6,9 @@ import(
 	"video_server/api/defs"
 )
 
+func openConn()*sql.DB{
+
+}
 
 func AddUserCredential(loginName string, pwd string) error{
 	stmtIns, err :=dbConn.Prepare("INSERT INTO users(login_name, pwd) values(?,?)")
