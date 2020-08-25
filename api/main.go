@@ -14,7 +14,7 @@ func NewMiddleWareHandler(){
 }
 func RegisterHandlers() *httprouter.Router{
 	router := httprouter.New()
-	router.POST("/user", CreateUser)
+	router.POST("/user", CreateUser)//function作为变量传入
 	router.POST("/user/:user_name",Login)
 	router.GET("/user/:username", GetUserInfo)
 	router.POST("/user/:username/videos", AddNewVideo)
@@ -30,3 +30,5 @@ func main(){
 	http.ListenAndServe(":8000",r)
 
 }
+
+//handler -> validation{1.request, 2.user}->business logic -> response.
