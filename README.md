@@ -18,3 +18,10 @@ URL定位资源，用HTTP动词（GET,POST,DELETE,DETC）描述操作。
 ##预期功能
 
 断点续传
+
+Golang channel/Concurrency
+
+Shared Channel: Not shared Memory
+
+Cloud native
+
