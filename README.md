@@ -1,6 +1,23 @@
+Simple and efficient live broadcast server:
+- Very simple to install and use;
+- Pure Golang, high performance, and cross-platform;
+- Supports commonly used transmission protocols, file formats, and encoding formats;
 
-[![Test](https://github.com/gwuhaolin/livego/workflows/Test/badge.svg)](https://github.com/gwuhaolin/livego/actions?query=workflow%3ATest)
-[![Release](https://github.com/gwuhaolin/livego/workflows/Release/badge.svg)](https://github.com/gwuhaolin/livego/actions?query=workflow%3ARelease)
+#### Supported transport protocols
+- RTMP
+- AMF
+- HLSSimple and efficient live broadcast server:
+- Very simple to install and use;
+- Pure Golang, high performance, and cross-platform;
+- Supports commonly used transmission protocols, file formats, and encoding formats;
+
+#### Supported transport protocols
+- RTMP
+- AMF
+- HLS
+- HTTP-FLV
+
+- HTTP-FLV
 
 ## video-sharing platform
 
