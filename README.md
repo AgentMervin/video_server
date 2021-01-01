@@ -1,3 +1,24 @@
+Simple and efficient live broadcast server:
+- Very simple to install and use;
+- Pure Golang, high performance, and cross-platform;
+- Supports commonly used transmission protocols, file formats, and encoding formats;
+
+#### Supported transport protocols
+- RTMP
+- AMF
+- HLSSimple and efficient live broadcast server:
+- Very simple to install and use;
+- Pure Golang, high performance, and cross-platform;
+- Supports commonly used transmission protocols, file formats, and encoding formats;
+
+#### Supported transport protocols
+- RTMP
+- AMF
+- HLS
+- HTTP-FLV
+
+- HTTP-FLV
+
 ## video-sharing platform
 
 ### REST接口设计
