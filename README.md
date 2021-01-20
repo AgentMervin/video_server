@@ -1,48 +1,51 @@
-Simple and efficient live broadcast server:
+
+## Share+: video-sharing platform
+General:
+User can watch/upload/download videos from the website. They can also make comments on the videos. The final target of this project is to build a community like TikTok.
+
+####Simple and efficient live broadcast server:
 - Very simple to install and use;
 - Pure Golang, high performance, and cross-platform;
 - Supports commonly used transmission protocols, file formats, and encoding formats;
 
-#### Supported transport protocols
-- RTMP
-- AMF
-- HLSSimple and efficient live broadcast server:
-- Very simple to install and use;
-- Pure Golang, high performance, and cross-platform;
-- Supports commonly used transmission protocols, file formats, and encoding formats;
+
 
 #### Supported transport protocols
-- RTMP
-- AMF
 - HLS
 - HTTP-FLV
 
-- HTTP-FLV
+### Design Graph
+![image](./asset/Design.jpeg)
 
-## video-sharing platform
+#### API Design
+Using HTTP Protocol to fulfill the operation on resource.
+Three types of APIs:
+- USER API: return states of each user.
+- RESOURCE API: returns the states of video(s).
+- COMMENT API: returns all the comments under one specific video/
 
-### REST接口设计
-REST代表含义：Resource Representational State Transfer。   
+#### Streaming Server Design
+Prerequisite:
+[bitbucket](https://godoc.org/github.com/DavidCai1993/token-bucket)
 
-Server提供的RESTful API中，URL中只使用名词来指定资源，原则上不使用动词。“资源”是REST架构或者说整个网络处理的核心。
-URL定位资源，用HTTP动词（GET,POST,DELETE,DETC）描述操作。
+- UDP protocol to implement file uploading
+- Token Bucket to control rate limit
 
-以URL 风格设计API
+#### Scheduler Design
+[**Channels are the pipes that connect concurrent goroutines.**](https://tour.golang.org/concurrency/2)
 
-数据库设计
+- Asynchronous Delete
+- Producer-Consumer Model
+- Timer: Run and Stop
 
-用HTTP协议里的动词来实现资源的添加，修改，删除等操作。即通过HTTP动词来实现资源的状态扭转
 
-用HTTP作为通信协议，JSON作为数据格式。
-
-![image](./asset/web-snapshot.png)
-##预期功能
+##Future goals
 
 断点续传
 
-Golang channel/Concurrency
+引入Golang 新特性
 
 Shared Channel: Not shared Memory
 
-Cloud native
+Cloud native Optimization
 
