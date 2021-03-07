@@ -39,7 +39,7 @@ Prerequisite:
 - Timer: Run and Stop
 
 
-##Future goals
+## Future goals
 
 断点续传
 
@@ -49,3 +49,7 @@ Shared Channel: Not shared Memory
 
 Cloud native Optimization
 
+handler -> validation{1. request, 2. user} -> business logic
+
+
+本项目如何处理session
