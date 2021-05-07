@@ -41,15 +41,5 @@ Prerequisite:
 
 ## Future goals
 
-断点续传
-
-引入Golang 新特性
-
-Shared Channel: Not shared Memory
-
 Cloud native Optimization
 
-handler -> validation{1. request, 2. user} -> business logic
-
-
-本项目如何处理session
