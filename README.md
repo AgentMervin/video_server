@@ -1,9 +1,10 @@
 
 ## Share+: video-sharing platform
-General:
-User can watch/upload/download videos from the website. They can also make comments on the videos. The final target of this project is to build a community like TikTok.
 
-####Simple and efficient live broadcast server:
+### Portfolio
+A streaming video website for internal use. User can watch/upload/download videos from the website. Comments are also permitted if the owner(s) of the video agrees.
+
+### Simple and efficient live broadcast server:
 - Very simple to install and use;
 - Pure Golang, high performance, and cross-platform;
 - Supports commonly used transmission protocols, file formats, and encoding formats;
