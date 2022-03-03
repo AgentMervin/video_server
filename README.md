@@ -1,24 +1,19 @@
 
-## Share+: video-sharing platform
+# Share+: video-sharing platform
 
-### Portfolio
 A streaming video website for internal use. User can watch/upload/download videos from the website. Comments are also permitted if the owner(s) of the video agrees.
 
-### Simple and efficient live broadcast server:
+## Features
 - Very simple to install and use;
 - Pure Golang, high performance, and cross-platform;
 - Supports commonly used transmission protocols, file formats, and encoding formats;
 
 
 
-#### Supported transport protocols
-- HLS
-- HTTP-FLV
-
-### Design Graph
+## Architecture
 ![image](./asset/Design.jpeg)
 
-#### API Design
+## API Design
 Using HTTP Protocol to fulfill the operation on resource.
 Three types of APIs:
 - USER API: return states of each user.
