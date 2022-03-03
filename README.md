@@ -20,14 +20,14 @@ Three types of APIs:
 - RESOURCE API: returns the states of video(s).
 - COMMENT API: returns all the comments under one specific video/
 
-#### Streaming Server Design
+## Streaming Server Design
 Prerequisite:
 [bitbucket](https://godoc.org/github.com/DavidCai1993/token-bucket)
 
 - UDP protocol to implement file uploading
 - Token Bucket to control rate limit
 
-#### Scheduler Design
+## Scheduler Design
 [**Channels are the pipes that connect concurrent goroutines.**](https://tour.golang.org/concurrency/2)
 
 - Asynchronous Delete
